@@ -3,38 +3,75 @@
   <head>
     <meta charset="utf-8">
     <title>Curriculum</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Fabián Rodríguez Rodríguez</h1>
-      <div id="data">
-        <h2>Datos personales</h2>
-        <img src="img/foto.jpg" alt="Foto de Fabián" id="data-photo" height="200" width="150">
-        <ul id="data-list">
-          <li>Fecha de nacimiento: 25-01-1989, La Laguna</li>
-          <li>Teléfono fijo: 922 63 09 10 Teléfono móvil: 686 187 933</li>
-          <li>Correo: <a href="mailto://fabianrguezrguez@gmail.com">fabianrguezrguez@gmail.com</a></li>
-          <li><a href="https://www.linkedin.com/in/fabi%C3%A1n-r-b6650678/">Linkedin</a></li>
-        </ul>
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About me</h4>
+              <p class="text-muted">
+                Administrador de sistemas con 5 años de esperiencia, empezando a adentrarse en el mundo del desarrollo fullstack,
+                con curiosidad e interés en todas las nuevas tecnologías.
+              </p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="https://github.com/rehxio" class="text-white">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/fabi%C3%A1n-r-b6650678/" class="text-white">LinkedIn</a></li>
+                <li><a href="mailto:fabianrguezrguez@gmail.com" class="text-white">Email</a></li>
+                <li><a href="tel:+34686187933" class="text-white">Llamar</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="formation">
-        <h2>Formación</h2>
-        <ul>
-          <li>2009 – 2011: <strong>Ciclo de Grado Superior de Administración de Sistemas Informáticos.</strong></li>
-        </ul>
-        <h3>Cursos</h3>
-        <ul>
-          <li>16 de Febrero de 2018: <strong>Curso de Introducción al Desarrollo Web: HTML y CSS (80h, 2 partes de 40h cada una).</strong></li>
-          <li>30 de Junio de 2015: Curso para Crear Aplicaciones Android Sin Programar (25h.).</li>
-          <li>10 de Septiembre de 2011: Curso de programación de aplicaciones para móviles con Android (30h.).</li>
-          <li>28 de Mayo de 2007: Curso de Diseño Web en Dreamweaver y Fireworks, Centro de Formación Meca Centro (40h.).</li>
-          <li>4 de Diciembre de 2006: Curso de Diseño Web en Flash, Centro de Formación Meca Centro (30h.).</li>
-          <li>2 de Octubre de 2006: Curso de Diseño Web en HTML, Centro de Formación Meca Centro (30h.).</li>
-          <li>1 de Septiembre de 2006: Curso de Diseño Web en Frontpage, Centro de Formación Meca Centro (60h.).</li>
-          <li>5 de Noviembre de 2002: Curso de Microsoft Office 2000, Centro de Formación Anchieta (80h.).</li>
-        </ul>
+      <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <strong>Fabián Rodríguez Rodríguez</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
       </div>
-      <div>
-        <h2>Informática</h2>
+    </header>
+
+    <div >
+      <div class="container">
+        <div class="row">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" alt="" style="height: 225px; width: 99%; display: block;" src="img/foto.jpg" data-holder-rendered="true">
+          </div>
+      </div>
+    </div>
+
+      <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseformation" aria-expanded="false" aria-controls="collapseformation">Formación</button>
+        <div class="collapse" id="collapseformation">
+          <ul>
+            <li>2009 – 2011: <strong>Ciclo de Grado Superior de Administración de Sistemas Informáticos.</strong></li>
+          </ul>
+          <h3>Cursos</h3>
+          <ul>
+            <li>16 de Febrero de 2018: <strong>Curso de Introducción al Desarrollo Web: HTML y CSS (80h, 2 partes de 40h cada una).</strong></li>
+            <li>30 de Junio de 2015: Curso para Crear Aplicaciones Android Sin Programar (25h.).</li>
+            <li>10 de Septiembre de 2011: Curso de programación de aplicaciones para móviles con Android (30h.).</li>
+            <li>28 de Mayo de 2007: Curso de Diseño Web en Dreamweaver y Fireworks, Centro de Formación Meca Centro (40h.).</li>
+            <li>4 de Diciembre de 2006: Curso de Diseño Web en Flash, Centro de Formación Meca Centro (30h.).</li>
+            <li>2 de Octubre de 2006: Curso de Diseño Web en HTML, Centro de Formación Meca Centro (30h.).</li>
+            <li>1 de Septiembre de 2006: Curso de Diseño Web en Frontpage, Centro de Formación Meca Centro (60h.).</li>
+            <li>5 de Noviembre de 2002: Curso de Microsoft Office 2000, Centro de Formación Anchieta (80h.).</li>
+          </ul>
+      </div>
+      </p>
+      <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseinfor" aria-expanded="false" aria-controls="collapseinfor">Informática</button>
+        <div class="collapse" id="collapseinfor">
         <ul>
           <li>Conocimientos a <strong>nivel avanzado en hardware.</strong></li>
           <li>Conocimientos a <strong>nivel avanzado en sistemas operativos: Microsoft Windows, Linux Ubuntu, Mac OSX, Armbian, Synology DSM y SRM.</strong></li>
@@ -42,25 +79,35 @@
           <li>Conocimientos a nivel básico en Git y Github.</li>
           <li>Conocimientos a nivel avanzado en ofimática: Microsoft Office y OpenOffice.</li>
           <li>Conocimientos a <strong>nivel avanzado en limpieza y desinfección de virus y otros malwares.</strong></li>
-      </ul>
+        </ul>
+      </div>
+      </p>
+      <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseexp" aria-expanded="false" aria-controls="collapseexp">Experiencia laboral</button>
+        <div class="collapse" id="collapseexp">
+        <h2>Experiencia laboral</h2>
+        <ul>
+          <li><strong>Administrador de Sistemas Informáticos, para Atos Consulting Canarias</strong> desde el 16 de Julio de 2014 al 22 de Noviembre de 2017. <br>Funciones: reparación y mantenimiento de equipos pertenecientes al Ayuntamiento de Santa Cruz de Tenerife.</li>
+          <li><strong>Administrador de Sistemas Informáticos, para CETECA</strong> desde el 10 de mayo del 2012 al 15 de Julio de 2014. <br>Funciones: reparación y mantenimiento de equipos pertenecientes al Ayuntamiento de Santa Cruz de Tenerife.</li>
+          <li><strong>Administrador de Sistemas Informáticos, para Distin-Rapid Canarias</strong> desde el 2 de enero al 30 de abril de 2012. <br>Funciones: reparación y mantenimiento de equipos pertenecientes al Ayuntamiento de Santa Cruz de Tenerife.</li>
+          <li><strong>Administrador de Sistemas Informáticos, para Hidráulica Tinerfeña</strong> del 25 de abril al 20 de mayo 2011. (Prácticas de empresa)<br>Funciones: reparación y mantenimiento de equipos en distintos centros.</li>
+        </ul>
+      </div>
+      </p>
+      <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseotherinfo" aria-expanded="false" aria-controls="collapseotherinfo">Otros datos de interés</button>
+        <div class="collapse" id="collapseotherinfo">
+        <h2>Otros datos de interés</h2>
+        <ul>
+          <li>Disponibilidad horaria y geográfica, negociable.</li>
+          <li>Conocimientos de <strong>Mecanografía Informatizada.</strong></li>
+          <li>Nivel de Inglés: A2.</li>
+          <li><strong>Carnet de conducir B.</strong></li>
+        </ul>
+      </div>
+      </p>
     </div>
-    <div>
-      <h2>Experiencia laboral</h2>
-      <ul>
-        <li><strong>Administrador de Sistemas Informáticos, para Atos Consulting Canarias</strong> desde el 16 de Julio de 2014 al 22 de Noviembre de 2017. <br>Funciones: reparación y mantenimiento de equipos pertenecientes al Ayuntamiento de Santa Cruz de Tenerife.</li>
-        <li><strong>Administrador de Sistemas Informáticos, para CETECA</strong> desde el 10 de mayo del 2012 al 15 de Julio de 2014. <br>Funciones: reparación y mantenimiento de equipos pertenecientes al Ayuntamiento de Santa Cruz de Tenerife.</li>
-        <li><strong>Administrador de Sistemas Informáticos, para Distin-Rapid Canarias</strong> desde el 2 de enero al 30 de abril de 2012. <br>Funciones: reparación y mantenimiento de equipos pertenecientes al Ayuntamiento de Santa Cruz de Tenerife.</li>
-        <li><strong>Administrador de Sistemas Informáticos, para Hidráulica Tinerfeña</strong> del 25 de abril al 20 de mayo 2011. (Prácticas de empresa)<br>Funciones: reparación y mantenimiento de equipos en distintos centros.</li>
-      </ul>
-    </div>
-    <div>
-      <h2>Otros datos de interés</h2>
-      <ul>
-        <li>Disponibilidad horaria y geográfica, negociable.</li>
-        <li>Conocimientos de <strong>Mecanografía Informatizada.</strong></li>
-        <li>Nivel de Inglés: A2.</li>
-        <li><strong>Carnet de conducir B.</strong></li>
-      </ul>
-    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
