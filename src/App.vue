@@ -3,8 +3,11 @@
     <div class='header'>
       <h1>Fabián Rodríguez Rodríguez</h1>
     </div>
-    <div class='contact'>
-      <html-contact></html-contact>
+    <div class='menu'>
+      <html-menu></html-menu>
+    </div>
+    <div class="contact">
+        <html-contact></html-contact>
     </div>
     <div class='content'>
       <img src="./assets/logo.png" alt="Foto de Fabián">
@@ -14,41 +17,50 @@
 
 <style>
 .header {
-  grid-area: header;
+    grid-area: header;
+    text-align: center;
 }
 
-.contact {
-  grid-area: contact;
+.menu {
+    grid-area: menu;
 }
 
 .content {
-  grid-area: content;
+    grid-area: content;
 }
 
 .footer {
-  grid-area: footer;
+    grid-area: footer;
+}
+
+.contact {
+    grid-area: contact;
+    margin-top: 10rem;
+    text-align: center;
 }
 
 .container {
-  display: grid;
-  grid-template-areas:
-    "header header header header header header"
-    "contact content content content content content";
-
-  text-align: center;
+    display: grid;
+    grid-template-areas:
+        "header header header header header header header"
+        "menu content content content content content content"
+        "menu content content content content content content"
+        "contact content content content content content content";
 }
 
 h1 {
-  font-family: Montserrat, Impact, sans-serif;
-  font-size: 48px;
+    font-family: Montserrat, Impact, sans-serif;
+    font-size: 48px;
 }
 </style>
 
 <script>
+import Menu from "./components/Menu";
 import Contact from "./components/Contact";
 export default {
-  components: {
-    "html-contact": Contact
+    components: {
+    'html-menu': Menu,
+    'html-contact': Contact
   }
 };
 </script>
