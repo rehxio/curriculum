@@ -10,22 +10,6 @@
 </template>
 
 <style lang="postcss" scoped>
-.datos {
-    grid-area: datos;
-}
-
-.estudios {
-    grid-area: estudios;
-}
-
-.explaboral {
-    grid-area: explaboral;
-}
-
-.conocimientos {
-    grid-area: conocimientos;
-}
-
 .html-menu {
     margin-top: 3rem;
     justify-content: center;

@@ -1,24 +1,29 @@
 <template>
-  <div class='container'>
-    <div class='header'>
-      <h1>Fabián Rodríguez Rodríguez</h1>
+    <div class='container'>
+        <div class='header'>
+            <h1>Fabián Rodríguez Rodríguez</h1>
+        </div>
+        <div class='menu'>
+            <html-menu></html-menu>
+        </div>
+        <div class="contact">
+            <html-contact></html-contact>
+        </div>
+        <div class='content'>
+            <img src="./assets/logo.png" alt="Foto de Fabián">
+        </div>
     </div>
-    <div class='menu'>
-      <html-menu></html-menu>
-    </div>
-    <div class="contact">
-        <html-contact></html-contact>
-    </div>
-    <div class='content'>
-      <img src="./assets/logo.png" alt="Foto de Fabián">
-    </div>
-  </div>
 </template>
 
-<style>
+<style lang="postcss" scoped>
 .header {
     grid-area: header;
     text-align: center;
+
+    & h1 {
+        font-family: Montserrat, Impact, sans-serif;
+        font-size: 48px;
+    }
 }
 
 .menu {
@@ -35,7 +40,7 @@
 
 .contact {
     grid-area: contact;
-    margin-top: 10rem;
+    justify-content: center;
     text-align: center;
 }
 
@@ -46,11 +51,6 @@
         "menu content content content content content content"
         "menu content content content content content content"
         "contact content content content content content content";
-}
-
-h1 {
-    font-family: Montserrat, Impact, sans-serif;
-    font-size: 48px;
 }
 </style>
 
